@@ -8,4 +8,8 @@ class ContactsController < ApplicationController
   def all_contacts
     @contacts = Contact.all
   end
+
+  def show
+    @contact = Contact.find_by(id: params[:id])
+  end
 end

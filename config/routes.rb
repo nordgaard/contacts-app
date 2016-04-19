@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get "/first_contact", to: 'contacts#first_contact'
   get "/all_contacts", to: 'contacts#all_contacts'
+  get '/contacts/:id', to: 'contacts#show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
